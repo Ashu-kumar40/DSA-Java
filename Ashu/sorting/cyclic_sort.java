@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class cyclic_sort {
     public static void main(String[] args) {
-        int[] arr = {5, 2, 4, 3,3, 1}; // if array is given from 1 to n (n = positive integer) and of continuous elements then use cyclic sort
+        int[] arr = {1,1,1,3,3,4,3,2,4,2}; // if array is given from 1 to n (n = positive integer) and of continuous elements then use cyclic sort
         sort(arr);
         System.out.println(Arrays.toString(arr));
     }
