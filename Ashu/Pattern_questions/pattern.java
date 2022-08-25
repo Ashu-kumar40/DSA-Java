@@ -8,7 +8,7 @@ package com.Ashu.Pattern_questions;
 
 public class pattern {
     public static void main(String[] args) {
-        pattern_5(9);
+        pattern_8(6);
     }
 
 //      1. Print the following pattern
@@ -85,17 +85,87 @@ public class pattern {
     static void pattern_5(int n){
         for (int row = 1; row <= n; row++) {
             if( row <= n/2 + 1){
-                for (int col = 1; col <= row; col++) {
+                for (int col = 1; col <= row; col++) { // this will print the rows in increment column
                     System.out.print("* ");
                 }
                 System.out.println();
             }
             else{
-                for (int col = 0; col < n + 1 - row; col++) {
+                for (int col = 0; col < n + 1 - row; col++) { // this will print the rows in decrement column
                     System.out.print("* ");
                 }
                 System.out.println();
             }
+        }
+    }
+    // 2nd method
+     static void pattern_5_m2(int n){
+         for (int row = 0; row < 2*n; row++) {
+             int totalColInRow = row > n ? 2*n - row : row;
+             for (int col = 0; col < totalColInRow; col++) {
+                 System.out.print("* ");
+             }
+             System.out.println();
+         }
+     }
+
+
+//   6. Print the following pattern
+//            *
+//           **
+//          ***
+//         ****
+//        *****
+    static void pattern_6(int n){
+        for (int row = 1; row <= n; row++) {
+            for (int colForSpace = 0; colForSpace < n - row; colForSpace++) {
+                System.out.print(" ");
+            }
+            for (int colForStar = 0; colForStar < row; colForStar++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+//   7. Print the following pattern
+//        *****
+//         ****
+//          ***
+//           **
+//            *
+
+    static void pattern_7(int n){
+        for (int row = 0; row <= n; row++) {
+            for (int spaceInCol = 0; spaceInCol < row; spaceInCol++) {
+                System.out.print(" ");
+            }
+            for (int StarInCol = 0; StarInCol <= n-row-1; StarInCol++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+
+
+//   4. Print the following pattern
+//              *
+//             ***
+//            *****
+//           *******
+//          *********
+
+    static void pattern_8(int n){ // n = number of column
+        for (int row = 1; row <= n; row++) {
+            for (int space = 1; space <= n - row; space++) {
+                System.out.print(" ");
+            }
+            int totalColInRow = row ==  1 ? row : 2*row - 1;
+            for (int star = 0; star < totalColInRow; star++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
     }
 
