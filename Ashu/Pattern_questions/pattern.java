@@ -8,7 +8,7 @@ package com.Ashu.Pattern_questions;
 
 public class pattern {
     public static void main(String[] args) {
-        pattern_11(6);
+        pattern_12(6);
     }
 
 //      1. Print the following pattern
@@ -224,6 +224,41 @@ public class pattern {
                 System.out.print("* ");
             }
             System.out.println();
+        }
+    }
+
+//   11. Print the following pattern
+//        * * * * *
+//         * * * *
+//          * * *
+//           * *
+//            *
+//            *
+//           * *
+//          * * *
+//         * * * *
+//        * * * * *
+    
+    static void pattern_12(int n){
+        for (int row = 0; row < 2*n; row++) {
+            if (row < n) {
+                for (int space = 0; space < row ; space++) {
+                    System.out.print(" ");
+                }
+                for (int star = 0; star < n - row; star++) {
+                    System.out.print("* ");
+                }
+            }
+            else{
+                for (int space = 0; space < 2*n - row - 1; space++) {
+                    System.out.print(" ");
+                }
+                for (int star = 0; star <row - n + 1; star++) {
+                    System.out.print("* ");
+                }
+            }
+            System.out.println();
+
         }
     }
 
