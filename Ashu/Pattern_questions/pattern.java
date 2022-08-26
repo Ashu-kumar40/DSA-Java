@@ -8,7 +8,7 @@ package com.Ashu.Pattern_questions;
 
 public class pattern {
     public static void main(String[] args) {
-        pattern_8(6);
+        pattern_10(6);
     }
 
 //      1. Print the following pattern
@@ -149,7 +149,7 @@ public class pattern {
 
 
 
-//   4. Print the following pattern
+//   8. Print the following pattern
 //              *
 //             ***
 //            *****
@@ -168,5 +168,45 @@ public class pattern {
             System.out.println();
         }
     }
+
+//   9. Print the following pattern
+//            *********
+//             *******
+//              *****
+//               ***
+//                *
+
+    static void pattern_9(int n){
+        for (int row = 0; row < n; row++) {
+            for (int space = 0; space < row; space++) {
+                System.out.print(' ');
+            }
+            int numOfStar = 2*n - 1 - 2*row;
+            for (int starInCol = 0; starInCol < numOfStar; starInCol++) {
+                System.out.print("*");
+//                numOfStar -= 2;
+            }
+            System.out.println();
+        }
+    }
+
+//   10. Print the following pattern
+//                     *
+//                    * *
+//                   * * *
+//                  * * * *
+//                 * * * * *
+    static void pattern_10(int n){
+        for (int row = 1; row <= n; row++) {
+            for (int space = 0; space < n - row; space++) {
+                System.out.print(" ");
+            }
+            for (int star = 0; star < row; star++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
 
 }
