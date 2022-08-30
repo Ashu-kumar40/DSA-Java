@@ -8,7 +8,7 @@ package com.Ashu.Pattern_questions;
 
 public class pattern {
     public static void main(String[] args) {
-        pattern_14(8);
+        pattern_15(5);
     }
 
 //      1. Print the following pattern
@@ -335,8 +335,39 @@ public class pattern {
 //          *   *
 //           * *
 //            *
-//
-//
+
+    static void pattern_15(int n){
+        for (int row = 1; row < 2*n; row++) {
+            int outerSpace = row < n ? n - row : row - n;
+            for (int space = 0; space < outerSpace; space++) {
+                System.out.print(" ");
+            }
+            if (row == 1 || row == 2*n - 1){
+                System.out.print("*");
+            }
+            else {
+                int loop = 0;
+                loop = row <= n ? 2 * row - 1 : loop - 2;
+                for (int patt = 1; patt < loop; patt++) {
+                    if (patt == 1 || patt == loop - 1) {
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
+                }
+                for (int patt = loop; patt >= 1; patt-=2) {
+                    if (patt == 1 || patt == loop) {
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
+                }
+            }
+            System.out.println();
+        }
+    }
+
+
 //16.             1
 //              1   1
 //            1   2   1
