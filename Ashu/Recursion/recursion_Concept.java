@@ -1,2 +1,26 @@
-package com.Ashu.Recursion;public class recursion_Concept {
+package com.Ashu.Recursion;
+
+public class recursion_Concept {
+    public static void main(String[] args) {
+        print(1);
+    }
+    static void print(int n){
+        System.out.println(n);
+        print(2);
+    }
+    static void print1(int n){
+        System.out.println(n);
+        print2(3);
+    }
+    static void print2(int n){
+        System.out.println(n);
+        print3(4);
+    }
+    static void print3(int n){
+        System.out.println(n);
+        print4(5);
+    }
+    static void print4(int n){
+        System.out.println(n);
+    }
 }
