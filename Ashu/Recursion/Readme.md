@@ -56,7 +56,7 @@ RecFun(){
 }
 ```
 
-#### Why Recursion?
+### Why Recursion?
  * It helps us in solving bigger/complex problems in a simple menner.
  * You can convert recursion solutions into iteration & vice versa (First solve the complex problem using recursion then convert it into iteration to get a more optimized answer )
  * Space complexity is not constent because of recursive calls.
@@ -77,7 +77,7 @@ You are getting this error because,
 
 Now to understand recursion let us understand it by an example:- Fibonacci series
 
-####nth number of Fibonacci series
+### nth number of Fibonacci series
 **Fibonacci series** - the Fibonacci sequence, in which each number is the sum of the two preceding ones. The sequence commonly starts from 0 and 1.
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
 
