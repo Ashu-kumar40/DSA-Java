@@ -1,4 +1,4 @@
-#Recursion Concepts (java)
+# Recursion Concepts (java)
 
 Reference and Thankful: [Kunal Kushwaha](https://www.youtube.com/c/KunalKushwaha)
 
@@ -96,7 +96,7 @@ let say if you want to print 9th fibonacci number, here are some few step to sol
   
 ![fibonacci recursive tree](fibonacci%20recursive%20tree.png)
 * See how and what types of values (int, string, etc.) are returned at each step and see where the function call will come out.
-* 
+
 ```
 public class fibonacci_series {
     public static void main(String[] args) {
