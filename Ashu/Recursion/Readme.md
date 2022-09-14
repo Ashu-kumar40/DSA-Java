@@ -8,7 +8,7 @@ This Readme file contains all the concept related to the **Recursion**.
 When you call any function, it comes inside the stack memory until its work is done.
 
 let us understand it with an example of a program that print numbers from 1 to 5.
-```
+```java
 public class recursion_Concept {
     public static void main(String[] args) {
         print(1);
@@ -49,7 +49,7 @@ That means at last the function `print4` is called and when it finished the flow
 ### Now let us just talk about Recursion.
 In simple words Recution is a function that calls itself.
 for eg:-
-```
+```java
 RecFun(){
     System.out.println("Hello World!");
     RecFun();   // Here this function is calling itself.
@@ -77,7 +77,7 @@ You are getting this error because,
 
 Now to understand recursion let us understand it by an example:- Fibonacci series
 
-####nth number of Fibonacci series
+#### nth number of Fibonacci series
 **Fibonacci series** - the Fibonacci sequence, in which each number is the sum of the two preceding ones. The sequence commonly starts from 0 and 1.
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
 
@@ -97,7 +97,7 @@ let say if you want to print 9th fibonacci number, here are some few step to sol
 ![fibonacci recursive tree](fibonacci%20recursive%20tree.png)
 * See how and what types of values (int, string, etc.) are returned at each step and see where the function call will come out.
 * 
-```
+```java
 public class fibonacci_series {
     public static void main(String[] args) {
         System.out.println("Enter the nth number you want to return");
