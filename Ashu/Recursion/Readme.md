@@ -93,8 +93,8 @@ let say if you want to print 9th fibonacci number, here are some few step to sol
 * Identify the left tree calls and right tree calls.
 * See the flow of function, how they are getting in stack.
 * use the debugger to see how it's working.
-  
-![fibonacci recursive tree](fibonacci%20recursive%20tree.png)
+
+![fibonacci recursive tree](fibonacci%20recursive%20tree.jpeg)
 * See how and what types of values (int, string, etc.) are returned at each step and see where the function call will come out.
 
 * 

@@ -8,7 +8,7 @@ public class defanging_IP_Address {
         String address = "12.343.23.4";
         System.out.println(defang(address));
 
-//        Direct meathod
+//        Direct method
 //        System.out.printf(address.replace(".", "[.]"));
     }
 
